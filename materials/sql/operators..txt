@@ -1,9 +1,19 @@
 select - говорим базе дынных что делать
 from - говорим откуда делать
-limit - условие для работы
+limit - ограничение количество печатания 
 employess - таблицы с  данным именем
+distinct  - убирает повторения
+where - видит только те данные которые указали
+4,5. offset - пишется после limit, означает сколько строк пропустит перед
+лимтом (limit 1 offset 2 - выведет 1 строку (3ю) пропустив первые 2)
+
+select * from employees limit 10    вернуть из таблицы employees первые 10 записей
 
 Пример:
 select city
 from employess
 limit 5
+
+
+WHERE city = 'London';
+select distinct city
