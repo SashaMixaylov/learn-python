@@ -4,6 +4,11 @@
 .exit -выход из sqlite
 .open - путь к файлу
 .table - выводит содержание таблицы
+ SELECT 1+1; - ВЫВОДИТ 2
+
+
+SELECT COUNT(*) FROM playlist_track; - узнать количество больше всего содержащую запись таблицу(проверка таблицы
+playlist_track)
 
 sqlite> SELECT * FROM albums limit 10;  - открыть базу данных albums 
 
