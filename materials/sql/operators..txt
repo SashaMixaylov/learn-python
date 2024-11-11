@@ -1,0 +1,9 @@
+select - говорим базе дынных что делать
+from - говорим откуда делать
+limit - условие для работы
+employess - таблицы с  данным именем
+
+Пример:
+select city
+from employess
+limit 5
