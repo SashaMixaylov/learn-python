@@ -9,11 +9,31 @@ where - видит только те данные которые указали
 
 select * from employees limit 10    вернуть из таблицы employees первые 10 записей
 
+
+Order by    (ASC - сортировка по возрастанию (по умолчанию)),(DESC - сортировка по убыванию)
+
+Select count(distinct city) From Customers Order By city
+
 Пример:
 select city
 from employess
 limit 5
 
+.output C:\Users\User\Documents\sasha\Python\sqls\chinook\chinook.db -выход из приложения в
+ sqlite3(но не из программы)
+
+
 
 WHERE city = 'London';
 select distinct city
+
+Пример:
+sqlite> SELECT name, milliseconds, albumid 
+   ...> FROM tracks
+   ...> ORDER BY albumid ASC
+   ...> LIMIT 10;
+
+SELECT name, milliseconds, albumid -> Запрос выбирает имя, миллисекунд, id альбом
+FROM tracks -> из трека
+ORDER BY albumid DESC -> отсортирует по полю albumid в обратном порядке
+LIMIT 10; -> только первые 10 записей
